@@ -36,6 +36,7 @@ var _ = math.Inf
 // proto package needs to be updated.
 const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
+// Common Request for all remote services
 type Request struct {
 	Brand         string `protobuf:"bytes,1,opt,name=brand" json:"brand,omitempty"`
 	Channel       string `protobuf:"bytes,2,opt,name=channel" json:"channel,omitempty"`
